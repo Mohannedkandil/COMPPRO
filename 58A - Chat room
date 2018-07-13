@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdio>
+#include<cstdlib>
+#include <cstring>
+#include<algorithm>
+#include <iomanip>
+#include <vector>
+using namespace std;
+int main()
+{
+    string s;
+    string word = "hello";
+    int a=0;
+    int cnt=0;
+    getline(cin,s);
+    for(int i=0;i<s.size();i++){
+        if(s[i] == word[a]){
+            a++;
+            cnt++;
+        }
+    }
+    if(cnt == 5){
+        cout <<"YES";
+    }else{
+        cout <<"NO";
+    }
+    return 0;
+}
